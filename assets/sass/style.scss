@@ -1,0 +1,27 @@
+
+// 1 - Utils
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/helpers';
+
+// 2 - Vendors
+// @import 'vendors/bootstrap';
+// @import 'vendors/bootstrap-better-nav';
+
+// 3 - Base
+@import 'base/reset';
+@import 'base/typography';
+
+// 4 - Layout
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';
+
+// 5 - Components
+@import 'components/navbar';
+@import 'components/card';
+
+// 5 - Pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/search';

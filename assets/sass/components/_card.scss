@@ -1,0 +1,53 @@
+.cards {
+	display: grid;
+	width: 900px;
+	margin: auto;
+	grid-template-columns: auto auto auto;
+	@include for-size(desktop-up){
+		grid-template-columns: auto auto;
+		width: auto;
+	}
+	@include for-size(phone-only){
+		grid-template-columns: auto;
+	}
+}
+
+.card {
+	border-radius: 20px;
+	border: none;
+	overflow: hidden;
+	box-shadow: $shadow;
+	background-color: $body-bg;
+	max-width: 270px;
+	min-width: auto;
+	margin: 25px;
+	@include for-size(phone-only){
+		margin: 30px auto;
+	}
+
+	.card-top {
+		background: $gradient;
+		display: grid;
+		place-items: center;
+		height: 150px;
+	}
+
+	.card-body {
+		padding: 20px;
+
+		h5.card-title {
+			font-size: 21px;
+			line-height: 28px;
+			letter-spacing: 0.05em;
+			margin-bottom: 16px;
+		}
+
+		.card-text {
+			color: $text;
+			font-size: 13px;
+			line-height: 15px;
+			letter-spacing: 0.05em;
+			color: $text !important;
+		}
+	}
+}

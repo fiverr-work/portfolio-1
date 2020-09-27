@@ -1,0 +1,49 @@
+.about {
+	background-color: #E2ECF1;
+
+	.navbar {
+		background-color: #E2ECF1;
+	}
+
+	.about-me {
+		padding-top: 4em;
+		padding-bottom: 4em;
+
+		.row {
+			&>div {
+				display: grid;
+				place-items: center;
+
+				&:first-child {
+
+					* {
+						color: #474747;
+						font-size: 15px;
+						line-height: 20px;
+						letter-spacing: 0.05em;
+					}
+				}
+			}
+			@include for-size(tablet-portrait-up){
+				&>div:first-child{
+					order: 2;
+				}
+				&>div:last-child{
+					order: 1;
+					div{
+						display: grid;
+						place-items: center;
+						img{
+							width: 50%;
+						}
+					}
+					margin-bottom: 20px;
+				}
+			}
+		}
+		@include for-size(tablet-portrait-up){
+			padding-top: 1em;
+			padding-bottom: 0em;
+		}
+	}
+}
